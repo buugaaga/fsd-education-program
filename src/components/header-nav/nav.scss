@@ -1,0 +1,17 @@
+
+.nav {
+  display: flex;
+  width: 1440px;
+
+  &__menu {
+
+
+    &-list {
+      list-style: none;
+      
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}

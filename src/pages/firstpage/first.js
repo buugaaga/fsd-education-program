@@ -1,8 +1,3 @@
-import html from "./first.pug";
+require('~/src/components/header-nav/nav.js');
 
-// Import styles
-import style from "./first.scss";
-// Import scripts
-import script from "~/src/scripts/plugin.js";
-console.log('all files loaded');
-window.onload('all files loaded');
+require('./first.scss');

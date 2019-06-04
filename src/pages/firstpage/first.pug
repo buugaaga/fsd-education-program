@@ -1,13 +1,10 @@
 
-doctype html
-html
-  head
-    title Example
-  body
+extends ../default.pug
     
+block content
+
+  block nav
+  include ../../components/header-nav/nav.pug
+  
       
-    h1 Webpack bum  4 PUG/SASS config by #{name}
-
-
-
-    
+   

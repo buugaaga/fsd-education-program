@@ -3,8 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
-    first: './src/pages/firstpage/first.js',
-    second: './src/pages/secondpage/second.js'
+    index: './src/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -23,6 +22,7 @@ module.exports = {
       {
         test: /\.pug$/,
         use: [
+            
             "html-loader",
             {
               loader: "pug-html-loader",
@@ -36,7 +36,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
             // MiniCssExtractPlugin.loader,
-            // "style-loader", // style nodes from js strings
+            "style-loader", // style nodes from js strings
             "css-loader",
             "sass-loader"
         ],
